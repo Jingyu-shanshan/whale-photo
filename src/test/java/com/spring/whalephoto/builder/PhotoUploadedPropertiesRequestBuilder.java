@@ -1,17 +1,15 @@
 package com.spring.whalephoto.builder;
 
-import com.spring.whalephoto.controller.dto.PhotoUploadedPropertiesRequest;
+import com.spring.whalephoto.controller.dto.PhotoStoragePropertiesRequest;
 
 public class PhotoUploadedPropertiesRequestBuilder {
     private String userId;
     private String fileName;
-    private String fileType;
 
-    public PhotoUploadedPropertiesRequest build() {
+    public PhotoStoragePropertiesRequest build() {
         this.userId = "1";
         this.fileName = "test_png.png";
-        this.fileType = "image/png";
-        return new PhotoUploadedPropertiesRequest(userId, fileName, fileType);
+        return new PhotoStoragePropertiesRequest(userId, fileName);
     }
 
     public PhotoUploadedPropertiesRequestBuilder withUserId(String userId) {
@@ -21,11 +19,6 @@ public class PhotoUploadedPropertiesRequestBuilder {
 
     public PhotoUploadedPropertiesRequestBuilder withFileName(String fileName) {
         this.fileName = fileName;
-        return this;
-    }
-
-    public PhotoUploadedPropertiesRequestBuilder withFileType(String fileType) {
-        this.fileType = fileType;
         return this;
     }
 }

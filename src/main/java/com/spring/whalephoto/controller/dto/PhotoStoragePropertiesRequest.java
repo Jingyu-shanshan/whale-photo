@@ -7,8 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class PhotoUploadedPropertiesRequest {
+public class PhotoStoragePropertiesRequest {
     private String userId;
     private String fileName;
-    private String fileType;
 }
