@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://127.0.0.1:15432/whale_photo"
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true

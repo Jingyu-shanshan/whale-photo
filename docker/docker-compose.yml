@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  postgres:
+    container_name: whale_photo_db
+    image: "postgres"
+    environment:
+      POSTGRES_PASSWORD: password
+      PGDATA: "/data/postgres"
+    volumes:
+      - postgres:/data/postgres
+      - ./docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
+    ports:
+      - "15432:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres:
