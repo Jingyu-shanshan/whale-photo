@@ -1,6 +1,8 @@
 package com.spring.whalephoto.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -9,6 +11,8 @@ import javax.persistence.*;
 @ConfigurationProperties(prefix = "file")
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "PhotoStorageProperties")
 public class PhotoStorageProperties {

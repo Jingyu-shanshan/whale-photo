@@ -1,14 +1,12 @@
-package com.spring.whalephoto.builder;
+package com.spring.whalephoto.builder.request;
 
 import com.spring.whalephoto.controller.dto.PhotoStoragePropertiesRequest;
 
 public class PhotoUploadedPropertiesRequestBuilder {
-    private String userId;
-    private String fileName;
+    private String userId = "1";
+    private String fileName = "test_png.png";
 
     public PhotoStoragePropertiesRequest build() {
-        this.userId = "1";
-        this.fileName = "test_png.png";
         return new PhotoStoragePropertiesRequest(userId, fileName);
     }
 

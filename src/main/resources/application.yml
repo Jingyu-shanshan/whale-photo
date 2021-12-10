@@ -16,4 +16,4 @@ spring:
       max-request-size: 215MB
 
 file:
-  upload-dir: "/uploads"
+  upload-directory: "/uploads"

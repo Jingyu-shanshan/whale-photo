@@ -1,6 +1,6 @@
 package com.spring.whalephoto.controller;
 
-import com.spring.whalephoto.builder.PhotoUploadedPropertiesRequestBuilder;
+import com.spring.whalephoto.builder.request.PhotoUploadedPropertiesRequestBuilder;
 import com.spring.whalephoto.controller.common.ObjectToJsonStringConvertor;
 import com.spring.whalephoto.controller.dto.PhotoStoragePropertiesRequest;
 import org.junit.jupiter.api.Test;
