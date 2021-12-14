@@ -14,7 +14,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "PhotoStorageProperties")
+@Table(name = "photo_storage_properties")
 public class PhotoStorageProperties {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
